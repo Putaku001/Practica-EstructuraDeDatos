@@ -1,6 +1,4 @@
-/* Algoritmos de búsqueda */
 
-// Búsqueda lineal (Secuenciales)
 fun linearSearch(array: List<Int>, target: Int): Int {
     for (i in array.indices) {
         if (array[i] == target) return i
@@ -8,7 +6,6 @@ fun linearSearch(array: List<Int>, target: Int): Int {
     return -1
 }
 
-// Búsqueda binaria
 fun binarySearch(array: List<Int>, target: Int): Int {
     var start = 0
     var end = array.size - 1
@@ -31,6 +28,6 @@ fun main(args: Array<String>) {
     val linearResult = linearSearch(list2, 5000)
     val binaryResult = binarySearch(list1, 5000)
 
-    println("Resultado de búsqueda lineal: $linearResult")
-    println("Resultado de búsqueda binaria: $binaryResult")
+    println("Resultado de busqueda lineal: $linearResult")
+    println("Resultado de busqueda binaria: $binaryResult")
 }

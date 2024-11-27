@@ -1,4 +1,3 @@
-#Recursividad 
 
 fun findMax(number: List<Int>): Int {
     tailrec fun findMaxHelper(index: Int, currentMax: Int): Int {
@@ -14,5 +13,5 @@ fun findMax(number: List<Int>): Int {
 
 fun main(args: Array<String>) {
     val numbers = listOf(10, 15, 5, 4, 2, 1, 20, 58, 64, 150, 41, 250)
-    println("El valor máximo en la lista es de: ${findMax(numbers)}")
+    println("El valor maximo en la lista es de: ${findMax(numbers)}")
 }
